@@ -69,7 +69,7 @@ HMODULE CDECL GetModuleHandleH(IN LPCWSTR lpModuleName) {
 	return NULL;
 }
 
-FARPROC GetProcAddressH(HMODULE hModule, DWORD dwApiNameHash) {
+FARPROC CDECL GetProcAddressH(HMODULE hModule, DWORD dwApiNameHash) {
 
 	if (hModule == NULL || dwApiNameHash == NULL) {
 		return NULL;
